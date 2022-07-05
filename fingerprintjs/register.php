@@ -51,7 +51,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
         function initFingerprintJS() {
-            FingerprintJS.load({token: 'DKXhBPTVv3uTGFMuh8ul'})
+            FingerprintJS.load({apiKey: 'DKXhBPTVv3uTGFMuh8ul'})
             .then(fp => fp.get())
             .then(result => {
                 document.getElementById('visitorId').value = result.visitorId
